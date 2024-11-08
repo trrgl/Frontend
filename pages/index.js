@@ -1,115 +1,63 @@
 import Image from "next/image";
-import localFont from "next/font/local";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="w-full h-screen flex">
+      <div className="w-1/4 h-full bg-[#1c3f83] flex flex-col items-center justify-evenly">
+        <div className="bg-white rounded-full w-60 h-60"></div>
+        <h1 className="text-[#158cca] font-bold text-3xl">Tergel Ganbold</h1>
+        <h1 className="text-white italic text-2xl font-thin">Student</h1>
+        <div className="bg-white w-5/6 h-0.5 rounded-3xl"></div>
+        <div className="w-3/4">
+          <h1 className="text-white text-3xl font-bold">CONTACT</h1>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="w-3/4 flex items-center justify-between">
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+            <Image src="/phone.png" width={24} height={24} />
+          </div>
+          <h1 className="text-white text-3xl font-bold">+976 9559 0137</h1>
+        </div>
+        <div className="w-3/4 flex items-center justify-between">
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+            <Image src="/mail.png" width={24} height={24} />
+          </div>
+          <h1 className="text-white text-xl font-bold">tergel2345@gmail.com</h1>
+        </div>
+        <div className="w-3/4 flex items-center justify-between">
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+            <Image src="/insta.png" width={24} height={24} />
+          </div>
+          <h1 className="text-white text-3xl font-bold">trrgl_0212</h1>
+        </div>
+      </div>
+      <div className="w-3/4 h-full bg-white flex flex-col justify-evenly p-8">
+        <div>
+          <h1 className="font-bold text-4xl text-[#1c3f83]">ABOUT ME</h1>
+          <h1 className="text-2xl text-[#158cca]">I'm currently a 16 year-old student @ Nest Education IT School, trying to make my hobby coding a career in the near future.</h1>
+        </div>
+        <div className="w-full h-0.5 rounded-xl bg-[#1c3f83]"></div>
+        <div>
+          <h1 className="font-bold text-4xl text-[#1c3f83]">SCHOOLS</h1>
+          <h1 className="font-bold text-3xl ml-4 text-[#1c3f83]">- Olonlog 2014-2021</h1>
+          <h1 className="font-bold text-3xl ml-4 text-[#1c3f83]">- Nest Education IT School 2024-present</h1>
+        </div>
+        <div className="w-full h-0.5 rounded-xl bg-[#1c3f83]"></div>
+        <div>
+          <h1 className="font-bold text-4xl text-[#1c3f83]">ACHIEVEMENTS</h1>
+          <h1 className="text-2xl text-[#158cca] ml-4">- Gold medal in the city's programming olympiad.</h1>
+          <h1 className="text-2xl text-[#158cca] ml-4">- Haruul Zangi U-18 2024 champion.</h1>
+          <h1 className="text-2xl text-[#158cca] ml-4">- Several Mathmatics olympiad awards.</h1>
+        </div>
+        <div className="w-full h-0.5 rounded-xl bg-[#1c3f83]"></div>
+        <div>
+          <h1 className="font-bold text-4xl text-[#1c3f83]">SKILLS</h1>
+          <h1 className="text-2xl text-[#158cca] ml-4">- Immortal in Valorant</h1>
+          <h1 className="text-2xl text-[#158cca] ml-4">- 3-4 years of HTML/CSS experience</h1>
+          <h1 className="text-2xl text-[#158cca] ml-4">- 3-4 years of C++ experience</h1>
+          <h1 className="text-2xl text-[#158cca] ml-4">- 2-3 years of JavaScript experience</h1>
+          <h1 className="text-2xl text-[#158cca] ml-4">- ~1 year of CTF experience</h1>
+        </div>
+      </div>
     </div>
   );
 }
