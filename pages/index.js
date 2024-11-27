@@ -11,9 +11,9 @@ export default function Home() {
           <h1 className="text-black font-extrabold text-2xl absolute">Weather</h1>
           <Image src="/weather.png" width={400} height={50} className="absolute bottom-12"/>
         </a>
-        <a href="./test" className="relative border-4 border-black hover:border-slate-800 w-full h-full bg-slate-300 rounded-xl hover:bg-slate-500 transition flex flex-col items-center p-8">
-          <h1 className="text-black font-extrabold text-2xl absolute">Weather</h1>
-          <Image src="/weather.png" width={400} height={50} className="absolute bottom-12"/> 
+        <a href="./news" className="relative border-4 border-black hover:border-slate-800 w-full h-full bg-slate-300 rounded-xl hover:bg-slate-500 transition flex flex-col items-center p-8">
+          <h1 className="text-black font-extrabold text-2xl absolute">News</h1>
+          <Image src="/news.png" width={400} height={50} className="absolute bottom-12"/> 
         </a>
         <a href="./" className="relative border-4 border-black hover:border-slate-800 w-full h-full bg-slate-300 rounded-xl hover:bg-slate-500 transition flex flex-col items-center p-8"></a>
         <a href="./" className="relative border-4 border-black hover:border-slate-800 w-full h-full bg-slate-300 rounded-xl hover:bg-slate-500 transition flex flex-col items-center p-8"></a>
