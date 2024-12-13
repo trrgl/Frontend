@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function Home() {
+    const router = useRouter();
   return (
     <div className="w-full h-screen bg-slate-950 grid grid-cols-12 gap-6 p-6">
         <div className="w-full h-full rounded-xl bg-slate-900 col-span-1 flex flex-col items-center p-4">
-            <div className="w-12 h-12 rounded-2xl bg-slate-800 flex items-center justify-center">
+            <div onClick={() => router.back()} className="cursor-pointer w-12 h-12 rounded-2xl bg-slate-800 flex items-center justify-center">
                 <Image src="/wind.png" width={35} height={35}/>
             </div>
             <div className="flex flex-col items-center mt-10">
@@ -49,7 +51,7 @@ export default function Home() {
                 <h1 className="text-slate-500 font-bold text-sm mt-2 group-hover:text-slate-300">Map</h1>
             </div>
             <div className="flex flex-col items-center mt-8 group cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" className="group-hover:stroke-slate-300 fill-slate-500 stroke-slate-500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" className="group-hover:stroke-slate-300 fill-slate-500 stroke-slate-500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
                 <h1 className="text-slate-500 font-bold text-sm mt-2 group-hover:text-slate-300">Settings</h1>
             </div>
         </div>

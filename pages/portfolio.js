@@ -1,12 +1,15 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className="w-full h-[200vh] bg-[#1d1e20]">
       <div className="w-full h-16 fixed flex justify-between items-center px-40">
-        <a href="./">
-          <Image src="/home.png" width={30} height={30}/>
-        </a>
+        <div onClick={() => router.back()}>
+          <Image className="cursor-pointer" src="/home.png" width={30} height={30}/>
+        </div>
         <div className="flex w-60 justify-between">
           <a href="#about">
             <h1 className="text-white hover:underline">about</h1>
