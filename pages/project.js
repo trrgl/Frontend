@@ -88,7 +88,7 @@ export default function Search() {
         {
             "id" : 17,
             "name" : "Emily",
-            "description" : "American."
+            "description" : "HELL YEAH 🦅🦅🇺🇸🇺🇸"
         },
         {
             "id" : 18,
@@ -115,7 +115,7 @@ export default function Search() {
         <div className="w-full h-full flex flex-col p-8 items-center bg-[#1d1e20] space-y-4">
             <button onClick={() => setGrid(!grid)} className="bg-blue-600 text-white p-2 rounded-md hover:bg-blue-800 absolute right-8 hover:cursor-pointer">{grid ? "Жагсаалт - руу шилжих" : "Grid - руу шилжих"}</button>
             <h1 className="text-white font-bold text-2xl">Хэрэглэгчдийн Жагсаалт</h1>
-            <input value={search} onChange={(Search) => setSearch(Search.target.value)} placeholder="Хэрэглэгчийн нэр оруулна уу..." className="w-full h-12 drop-shadow-xl placeholder-white bg-[#1f9ea6] rounded-xl p-2"></input>
+            <input value={search} onChange={(Search) => setSearch(Search.target.value)} placeholder="Хэрэглэгчийн нэр оруулна уу..." className="shadow-sm shadow-white w-full h-12 drop-shadow-xl placeholder-white bg-[#1f9ea6] rounded-xl p-2"></input>
             <div className={grid == true ? "w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 z-10" : "w-full space-y-4 z-10"}>
                 {filteredData.length > 0 ? (
                     filteredData.map((classmates) => (
