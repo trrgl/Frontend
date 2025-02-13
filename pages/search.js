@@ -115,9 +115,9 @@ export default function Search() {
             <h1 className="text-black font-bold text-2xl">Хэрэглэгчдийн Жагсаалт</h1>
             <input value={search} onChange={(Search) => setSearch(Search.target.value)} placeholder="Хэрэглэгчийн нэр оруулна уу..." className="w-full h-12 drop-shadow-xl text-black rounded-xl p-2"></input>
             <div className="w-full space-y-4 z-10">
-                    {filteredData.map((classmates) => (
-                        <div key={classmates.id} className="w-full bg-white drop-shadow-xl text-black h-full rounded-xl p-4">
-                            <h1 className="font-bold text-2xl">{classmates.name}</h1>
+                {filteredData.map((classmates) => (
+                    <div key={classmates.id} className="w-full bg-white drop-shadow-xl text-black h-full rounded-xl p-4">
+                        <h1 className="font-bold text-2xl">{classmates.name}</h1>
                         <h1>{classmates.description}</h1>
                     </div>
                 ))}
