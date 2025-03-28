@@ -45,7 +45,7 @@ export default function Home() {
         <div className="w-full px-96">
           <div className="w-full h-16"></div>
           <h1 className="text-4xl text-white font-bold">about</h1>
-          <h1 className="text-xl mt-2">I'm currently a junior year student at Nest Education IT School. I'm also technology enthusiast, having interest in CTF competitions and Web development.</h1>
+          <h1 className="text-xl mt-2">Im currently a junior year student at Nest Education IT School. Im also technology enthusiast, having interest in CTF competitions and Web development.</h1>
         </div>
       </section>
       <section id="skills">
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="w-full px-96">
           <div className="w-full h-16"></div>
           <h1 className="text-4xl text-white font-bold">achievements</h1>
-          <h1 className="text-xl mt-2">- HaruulZangi U-18 2024 Champion. <br></br>- Gold medal in the city's informatics olympiad. <br></br>- Several other Math, Physics olympiad awards.</h1>
+          <h1 className="text-xl mt-2">- HaruulZangi U-18 2024 Champion. <br></br>- Gold medal in the citys informatics olympiad. <br></br>- Several other Math, Physics olympiad awards.</h1>
         </div>
       </section>
     </div>

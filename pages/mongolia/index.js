@@ -90,7 +90,7 @@ export default function Fetch() {
             </div>
             <div className={grid ? "w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 z-10" : "w-full space-y-8 z-10"}>
                 {cfilteredData.map((item) => (
-                    <div className="relative group flex items-center justify-center">
+                    <div key={item.id} className="relative group flex items-center justify-center">
                         <div className="group-hover:from-red-400 group-hover:via-blue-500 group-hover:to-red-400 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-red-600 via-blue-700 to-red-600 opacity-75 blur"></div>
                         <div key={item.id} onClick={() => router.push(`mongolia/clothes/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
@@ -103,7 +103,7 @@ export default function Fetch() {
                     </div>
                 ))}
                 {ifilteredData.map((item) => (
-                    <div className="relative group flex items-center justify-center">
+                    <div key={item.id} className="relative group flex items-center justify-center">
                         <div className="group-hover:from-red-400 group-hover:via-blue-500 group-hover:to-red-400 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-red-600 via-blue-700 to-red-600 opacity-75 blur"></div>
                         <div key={item.id} onClick={() => router.push(`mongolia/instruments/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
@@ -116,7 +116,7 @@ export default function Fetch() {
                     </div>
                 ))}
                 {htfilteredData.map((item) => (
-                    <div className="relative group flex items-center justify-center">
+                    <div key={item.id} className="relative group flex items-center justify-center">
                         <div className="group-hover:from-red-400 group-hover:via-blue-500 group-hover:to-red-400 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-red-600 via-blue-700 to-red-600 opacity-75 blur"></div>
                         <div key={item.id} onClick={() => router.push(`mongolia/historicaltools/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
@@ -129,7 +129,7 @@ export default function Fetch() {
                     </div>
                 ))}
                 {egfilteredData.map((item) => (
-                    <div className="relative group flex items-center justify-center">
+                    <div key={item.id} className="relative group flex items-center justify-center">
                         <div className="group-hover:from-red-400 group-hover:via-blue-500 group-hover:to-red-400 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-red-600 via-blue-700 to-red-600 opacity-75 blur"></div>
                         <div key={item.id} onClick={() => router.push(`mongolia/ethnicgroups/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
@@ -142,7 +142,7 @@ export default function Fetch() {
                     </div>
                 ))}
                 {hffilteredData.map((item) => (
-                    <div className="relative group flex items-center justify-center">
+                    <div key={item.id} className="relative group flex items-center justify-center">
                         <div className="group-hover:from-red-400 group-hover:via-blue-500 group-hover:to-red-400 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-red-600 via-blue-700 to-red-600 opacity-75 blur"></div>
                         <div key={item.id} onClick={() => router.push(`mongolia/historicalfigures/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
@@ -155,7 +155,7 @@ export default function Fetch() {
                     </div>
                 ))}
                 {tafilteredData.map((item) => (
-                    <div className="relative group flex items-center justify-center">
+                    <div key={item.id} className="relative group flex items-center justify-center">
                         <div className="group-hover:from-red-400 group-hover:via-blue-500 group-hover:to-red-400 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-red-600 via-blue-700 to-red-600 opacity-75 blur"></div>
                         <div key={item.id} onClick={() => router.push(`mongolia/touristattractions/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
@@ -168,7 +168,7 @@ export default function Fetch() {
                     </div>
                 ))}
                 {pfilteredData.map((item) => (
-                    <div className="relative group flex items-center justify-center">
+                    <div key={item.id} className="relative group flex items-center justify-center">
                         <div className="group-hover:from-red-400 group-hover:via-blue-500 group-hover:to-red-400 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-red-600 via-blue-700 to-red-600 opacity-75 blur"></div>
                         <div key={item.id} onClick={() => router.push(`mongolia/provinces/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYQe7sk8paP8GwcE7D6iEMSmj82HEVN8lZg&s" className="w-auto h-60 rounded-xl"></img>

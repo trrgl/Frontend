@@ -9,7 +9,7 @@ export default function Home() {
         <div className="w-full h-full min-h-screen flex flex-col items-center bg-gray-200 space-y-8 relative">
             <div className="w-full h-20 bg-blue-600 text-white font-bold text-3xl flex items-center justify-center">Nest high School</div>
             <h1 className="text-4xl font-bold text-black text-center">Welcome to Nest School</h1>
-            <h1 className="w-2/3 text-black text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</h1>
+            <h1 className="w-2/3 text-black text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</h1>
             <div className="flex space-x-8 items-center">
                 <button onClick={() => {addCount(count+1), showModal(!modal)}} className="bg-blue-600 text-white flex items-center justify-center px-6 py-3 font-semibold hover:bg-blue-800 rounded-xl">Click Me!</button>
                 <h1 className="text-black">Clicked {count} times.</h1>

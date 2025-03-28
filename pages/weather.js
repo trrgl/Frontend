@@ -65,7 +65,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full rounded-xl h-full bg-slate-900 py-6 px-10 relative">
-                <h1 className="absolute top-4 left-6 text-slate-500 text-sm font-extrabold">TODAY'S FORECAST</h1>
+                <h1 className="absolute top-4 left-6 text-slate-500 text-sm font-extrabold">TODAYS FORECAST</h1>
                 <div className="w-full h-5/6 mt-8 grid grid-cols-6">
                     <div className="w-full h-full flex flex-col items-center justify-between border-r border-slate-800">
                         <h1 className="text-sm text-slate-500 font-extrabold">6:00 AM</h1>
