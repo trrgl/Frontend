@@ -147,7 +147,7 @@ export default function Fetch() {
                         <div key={item.id} onClick={() => router.push(`mongolia/historicalfigures/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
                             <div>
-                                <h1 className="font-bold text-2xl group-hover:text-3xl transition-all duration-150">{item.name}</h1>
+                                <h1 className="font-bold text-2xl group-hover:text-3xl transition-all text-center duration-150">{item.name}</h1>
                                 <h1>{item.description}</h1>
                                 <h1 className="italic underline group-hover:font-bold transition-all duration-150">{item.timePeriod}</h1>
                             </div>
