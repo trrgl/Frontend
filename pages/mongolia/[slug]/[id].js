@@ -52,7 +52,7 @@ export default function Fetch() {
                 router.query.id == item.id && (
                     <div key={item.id} className="w-full h-screen bg-[#171717] flex justify-center items-center -z-20">
                         <div className="h-1/2 flex flex-col md:flex-row w-full items-center justify-center p-36">
-                            {router.query.slug != "provinces" ?  <img className="w-auto h-96 border-4 mb-12 md:mr-24 rounded-3xl border-red-600" src={item.images[0]}></img> : <img className="w-96 mr-24" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"></img>}
+                            {router.query.slug != "provinces" ?  <img className="w-96 h-64 md:w-auto md:h-96 border-4 mb-12 md:mr-24 rounded-3xl border-red-600" src={item.images[0]}></img> : <img className="w-96 mr-24" src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"></img>}
                             <div className="space-y-4">
                                 <h1 className="text-4xl md:text-7xl font-black text-[#EAEAEA]">{item.name}</h1>
                                 <h1>{item.description}</h1>
