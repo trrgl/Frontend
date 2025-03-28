@@ -82,7 +82,7 @@ export default function Fetch() {
     }
 
     return (
-        <div className="w-full h-full flex flex-col p-8 items-center bg-[#171717] space-y-8 px-24">
+        <div className="w-full h-full flex flex-col p-8 items-center bg-[#171717] space-y-8">
             <h1 className="text-red-600 font-black font-serif text-3xl">Mongolia</h1>
             <div className="relative group w-full">
                 <div className="group-hover:from-red-400 group-hover:via-blue-500 group-hover:to-red-400 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-red-600 via-blue-700 to-red-600 group-focus:from-red-400 group-focus:via-blue-500 group-focus:to-red-400 opacity-75 blur"></div>
@@ -183,7 +183,7 @@ export default function Fetch() {
             </div>
             <p id="noSearch" className={`text-red-600 font-black mt-48 text-3xl ${Found ? "hidden" : ""}`}>No Item Found</p>
             <div className="w-screen h-screen bg-[#171717] absolute -z-10"></div>
-            <button onClick={() => setGrid(!grid)} className="cursor-pointer absolute top-0 right-24 bg-red-600 hover:bg-red-800 text-white rounded-lg px-4 py-2">{grid ? "List-рүү шилжих" : "Grid-рүү шилжих"}</button>
+            <button onClick={() => setGrid(!grid)} className="cursor-pointer absolute top-0 right-24 bg-red-600 hover:bg-red-800 text-white rounded-lg px-4 py-2 hidden sm:block">{grid ? "List-рүү шилжих" : "Grid-рүү шилжих"}</button>
         </div>
     );
 }
