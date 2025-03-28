@@ -13,9 +13,9 @@ export default function Fetch() {
     const [historicalfigures, setFigures] = useState([]);
     const [touristattractions, setAttractions] = useState([]);
 
-    const fetchData = async () => {
+    const fetchData = async (i) => {
         try {
-            const data = await fetch(`http://139.162.5.230:10299/api/setMsg`);
+            const data = await fetch(`http://139.162.5.230:10312/user/${i}`);
             console.log(data);
             const jsonData = await data.json();
             setData(jsonData);
@@ -25,8 +25,10 @@ export default function Fetch() {
     }
 
     useEffect(() => {
-        fetchData()
-        console.log(data);
+        for(let i=0; i<100; i++) {
+            fetchData(i)
+            console.log(data);
+        }
     },[])
 
     return (

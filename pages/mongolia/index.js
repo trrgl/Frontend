@@ -78,7 +78,7 @@ export default function Fetch() {
     }, [allData])
     
     if (loading) {
-        return <div className="flex w-full justify-center"><p className="text-red-600 font-black mt-48 text-3xl">Loading...</p></div>
+        console.log("hi")
     }
 
     return (
@@ -95,9 +95,9 @@ export default function Fetch() {
                         <div key={item.id} onClick={() => router.push(`mongolia/clothes/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
                             <div>
-                                <h1 className="font-bold text-2xl">{item.name}</h1>
+                                <h1 className="font-bold text-2xl group-hover:text-3xl transition-all duration-150">{item.name}</h1>
                                 <h1>{item.description}</h1>
-                                <h1 className="italic underline">{item.timePeriod}</h1>
+                                <h1 className="italic underline group-hover:font-bold transition-all duration-150">{item.timePeriod}</h1>
                             </div>
                         </div>
                     </div>
@@ -108,9 +108,9 @@ export default function Fetch() {
                         <div key={item.id} onClick={() => router.push(`mongolia/instruments/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
                             <div>
-                                <h1 className="font-bold text-2xl">{item.name}</h1>
+                                <h1 className="font-bold text-2xl group-hover:text-3xl transition-all duration-150">{item.name}</h1>
                                 <h1>{item.description}</h1>
-                                <h1 className="italic underline">{item.timePeriod}</h1>
+                                <h1 className="italic underline group-hover:font-bold transition-all duration-150">{item.timePeriod}</h1>
                             </div>
                         </div>
                     </div>
@@ -121,9 +121,9 @@ export default function Fetch() {
                         <div key={item.id} onClick={() => router.push(`mongolia/historicaltools/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
                             <div>
-                                <h1 className="font-bold text-2xl">{item.name}</h1>
+                                <h1 className="font-bold text-2xl group-hover:text-3xl transition-all duration-150">{item.name}</h1>
                                 <h1>{item.description}</h1>
-                                <h1 className="italic underline">{item.timePeriod}</h1>
+                                <h1 className="italic underline group-hover:font-bold transition-all duration-150">{item.timePeriod}</h1>
                             </div>
                         </div>
                     </div>
@@ -134,9 +134,9 @@ export default function Fetch() {
                         <div key={item.id} onClick={() => router.push(`mongolia/ethnicgroups/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
                             <div>
-                                <h1 className="font-bold text-2xl">{item.name}</h1>
+                                <h1 className="font-bold text-2xl group-hover:text-3xl transition-all duration-150">{item.name}</h1>
                                 <h1>{item.linguistic}</h1>
-                                <h1 className="italic underline">{item.population}</h1>
+                                <h1 className="italic underline group-hover:font-bold transition-all duration-150">{item.population}</h1>
                             </div>
                         </div>
                     </div>
@@ -147,9 +147,9 @@ export default function Fetch() {
                         <div key={item.id} onClick={() => router.push(`mongolia/historicalfigures/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
                             <div>
-                                <h1 className="font-bold text-2xl">{item.name}</h1>
+                                <h1 className="font-bold text-2xl group-hover:text-3xl transition-all duration-150">{item.name}</h1>
                                 <h1>{item.description}</h1>
-                                <h1 className="italic underline">{item.timePeriod}</h1>
+                                <h1 className="italic underline group-hover:font-bold transition-all duration-150">{item.timePeriod}</h1>
                             </div>
                         </div>
                     </div>
@@ -160,9 +160,9 @@ export default function Fetch() {
                         <div key={item.id} onClick={() => router.push(`mongolia/touristattractions/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src={item.images[0]} className="h-60 w-auto rounded-xl"></img>
                             <div>
-                                <h1 className="font-bold text-2xl">{item.name}</h1>
+                                <h1 className="font-bold text-2xl group-hover:text-3xl transition-all duration-150">{item.name}</h1>
                                 <h1>{item.description}</h1>
-                                <h1 className="italic underline">{item.timePeriod}</h1>
+                                <h1 className="italic underline group-hover:font-bold transition-all duration-150">{item.timePeriod}</h1>
                             </div>
                         </div>
                     </div>
@@ -173,9 +173,9 @@ export default function Fetch() {
                         <div key={item.id} onClick={() => router.push(`mongolia/provinces/${item.id}`)} className={`w-full cursor-pointer group-hover:bg-slate-800 bg-slate-900 drop-shadow-xl text-[#EAEAEA] h-full rounded-xl p-4 flex items-center ${grid ? "flex-col" : "flex-row space-x-4"}`}>
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYQe7sk8paP8GwcE7D6iEMSmj82HEVN8lZg&s" className="w-auto h-60 rounded-xl"></img>
                             <div>
-                                <h1 className="font-bold text-2xl">{item.name}</h1>
+                                <h1 className="font-bold text-2xl group-hover:text-4xl transition-all duration-50">{item.name}</h1>
                                 <h1>{item.description}</h1>
-                                <h1 className="italic underline">{item.timePeriod}</h1>
+                                <h1 className="italic underline group-hover:font-bold transition-all duration-50">{item.timePeriod}</h1>
                             </div>
                         </div>
                     </div>
