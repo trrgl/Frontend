@@ -28,6 +28,15 @@ export default function Fetch() {
     }
 
     useEffect(() => {
+        const handleResize = () => {
+            setGrid(window.innerWidth <= 640);
+        };
+        window.addEventListener("resize", handleResize);
+        handleResize();
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    useEffect(() => {
         setLoading(true);
         fetchData("clothes", setClothes);
         fetchData("instruments", setInstruments);
@@ -76,10 +85,6 @@ export default function Fetch() {
             setFound(true)
         }
     }, [allData])
-    
-    if (loading) {
-        console.log("hi")
-    }
 
     return (
         <div className="w-full h-full flex flex-col p-8 items-center bg-[#171717] space-y-8">
