@@ -183,7 +183,7 @@ export default function Fetch() {
             </div>
             <p id="noSearch" className={`text-red-600 font-black mt-48 text-3xl ${Found ? "hidden" : ""}`}>No Item Found</p>
             <div className="w-screen h-screen bg-[#171717] absolute -z-10"></div>
-            <button onClick={() => setGrid(!grid)} className="cursor-pointer absolute top-0 right-24 bg-red-600 hover:bg-red-800 text-white rounded-lg px-4 py-2 hidden sm:block">{grid ? "List-рүү шилжих" : "Grid-рүү шилжих"}</button>
+            <button onClick={() => setGrid(!grid)} className="cursor-pointer absolute top-0 right-8 bg-red-600 hover:bg-red-800 text-white rounded-lg px-4 py-2 hidden sm:block">{grid ? "List-рүү шилжих" : "Grid-рүү шилжих"}</button>
         </div>
     );
 }
