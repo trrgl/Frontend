@@ -5,25 +5,25 @@ export default function Toki() {
     return (
         <div className="w-full h-screen flex">
             <div className="w-1/5 h-screen bg-[#0c1f40] flex flex-col">
-                <div className="w-full flex items-center space-x-2 m-2">
+                <div className="w-full flex items-center justify-center space-x-2 my-2">
                     <img className="w-16" src="../nest.png"></img>
-                    <h1 className="text-white text-xl font-semibold">Nest</h1>
+                    <h1 className="text-white sm:block hidden text-xl font-semibold">Nest</h1>
                 </div>
                 <div className="w-full h-40 flex relative">
                     <div className="w-full h-40 flex flex-col items-center justify-center z-10 space-y-2 py-4">
                         <div className="w-12 h-12 bg-white rounded-full"></div>
-                        <h1 className="font-bold text-center">Tergel Ganbold</h1>
-                        <h1>Class: 11A</h1>
+                        <h1 className="font-bold text-sm sm:text-md md:text-lg text-center">Tergel Ganbold</h1>
+                        <h1 className="sm:text-md text-xs text-center">Class: 11A</h1>
                     </div>
                     <div className="w-full h-40 absolute bg-center bg-cover opacity-40 bg-[url('/sidebar_bg.jpg')]"></div>
                 </div>
-                <div onClick={() => (router.push("../uliral4/toki"))} className="w-full p-4 flex items-center hover:bg-[#193669] space-x-2 cursor-pointer">
+                <div onClick={() => (router.push("../uliral4/toki"))} className="w-full p-4 flex justify-center sm:justify-start items-center hover:bg-[#193669] space-x-2 cursor-pointer">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
-                    <h1 className="text-md">Toki</h1>
+                    <h1 className="sm:block hidden text-md">Toki</h1>
                 </div>
-                <div onClick={() => (router.push("../uliral4/shop"))} className="w-full p-4 flex items-center hover:bg-[#193669] space-x-2 cursor-pointer">
+                <div onClick={() => (router.push("../uliral4/shop"))} className="w-full p-4 flex justify-center sm:justify-start items-center hover:bg-[#193669] space-x-2 cursor-pointer">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
-                    <h1 className="text-md">Shop</h1>
+                    <h1 className="sm:block hidden text-md">Shop</h1>
                 </div>
             </div>
             <div className="w-4/5 h-full bg-white overflow-auto">
