@@ -11,7 +11,7 @@ export default function Home() {
         <div onClick={() => router.push("term2")} className="cursor-pointer relative border-4 border-black hover:border-slate-800 w-full h-full bg-slate-300 rounded-xl hover:bg-slate-500 transition flex justify-center items-center p-8">
           <h1 className="text-black font-extrabold text-2xl absolute">Term2</h1>
         </div>
-        <div onClick={() => router.push("term3")} className="cursor-pointer relative border-4 border-black hover:border-slate-800 w-full h-full bg-slate-300 rounded-xl hover:bg-slate-500 transition flex justify-center items-center p-8">
+        <div onClick={() => router.push("uliral4/toki")} className="cursor-pointer relative border-4 border-black hover:border-slate-800 w-full h-full bg-slate-300 rounded-xl hover:bg-slate-500 transition flex justify-center items-center p-8">
           <h1 className="text-black font-extrabold text-2xl absolute">Term3</h1>
         </div>
     </div>
