@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Fetch() {
     const router = useRouter();
@@ -86,6 +87,15 @@ export default function Fetch() {
         }
     }, [allData])
 
+    const handleSubmit = () => {
+        axios.post("http://localhost:8080/createUsers", {
+            first_name: "Tergel",
+            last_name: "Ganbold",
+            email: "test@nhs.edu.mn",
+            age: 69
+        })
+    }
+
     return (
         <div className="w-full h-full flex flex-col p-8 items-center bg-[#171717] space-y-8">
             <h1 className="text-red-600 font-black font-serif text-3xl">Mongolia</h1>
@@ -93,6 +103,7 @@ export default function Fetch() {
                 <div className="group-hover:from-red-400 group-hover:via-blue-500 group-hover:to-red-400 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-red-600 via-blue-700 to-red-600 group-focus:from-red-400 group-focus:via-blue-500 group-focus:to-red-400 opacity-75 blur"></div>
                 <input value={search} onChange={(Search) => setSearch(Search.target.value)} placeholder="Search..." className="w-full focus:outline-none h-12 drop-shadow-xl text-[#EAEAEA] bg-slate-900 focus:bg-slate-800 hover:bg-slate-800 rounded-xl p-2"></input>
             </div>
+            <button onClick={() => handleSubmit()} className="cursor-pointer absolute top-0 left-8 bg-red-600 hover:bg-red-800 text-white rounded-lg px-4 py-2">Үүсгэх</button>
             <div className={grid ? "w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 z-10" : "w-full space-y-8 z-10"}>
                 {cfilteredData.map((item) => (
                     <div key={item.id} className="relative group flex items-center justify-center">
