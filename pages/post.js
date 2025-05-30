@@ -1,7 +1,10 @@
 import axios from "axios";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 export default function Post() {
+    const router = useRouter();
+
     const [lname, setLName] = useState("");
     const [fname, setFName] = useState("");
     const [email, setEmail] = useState("");
@@ -14,7 +17,8 @@ export default function Post() {
             last_name: lname,
             email: email,
             age: age
-        })
+        });
+        router.push("/list");
     }
 
     return (
