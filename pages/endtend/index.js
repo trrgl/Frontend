@@ -647,7 +647,7 @@ export default function Endtend() {
                     </div>
                 </div>
                 <h1 className="text-3xl text-white font-medium mt-28">Stay at our top unique properties</h1>
-                <h1 className="text-xl text-[#919191]">From castles and villas to boats and igloos, we've got it all</h1>
+                <h1 className="text-xl text-[#919191]">From castles and villas to boats and igloos, we have got it all</h1>
                 <div className="flex justify-between mt-4">
                     <div className="relative w-64 h-80 rounded-3xl border-4 border-[#282828]/80 overflow-hidden flex-none">
                         <img className="w-full absolute top-0 h-32 object-cover" src="/cardBG.png"></img>
